@@ -22,7 +22,6 @@ public class Calculadora {
         return Math.tan(x);
     }
     public double resta(double a, double b){
-
         return a-b;
     }
     
@@ -32,6 +31,10 @@ public class Calculadora {
 
     public double division(double x, double y) {
         return x/y;
+    }
+
+    public double log(double x){
+        return Math.log10(x);
     }
 
 }

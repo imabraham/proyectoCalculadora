@@ -58,4 +58,12 @@ public class AppTest {
 	    assertTrue((Double)c.division(1,2)==(Double)0.5);
         assertTrue(c.division(0,15)==0);
     }
+
+    @Test public void testlog10() {
+        Calculadora c = new Calculadora();
+
+        assertTrue(c.log(5) == 0.6989);
+        assertTrue(c.log(1) == 0);
+        
+    }
 }
