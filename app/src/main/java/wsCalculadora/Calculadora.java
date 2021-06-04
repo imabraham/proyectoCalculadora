@@ -36,5 +36,13 @@ public class Calculadora {
     public double log(double x){
         return Math.log10(x);
     }
+    
+    public double ln(double x) {
+        return Math.log(x);
+    }
+
+    public double radical(double x, double numerador, double denominador) {
+        return Math.pow(x, (double) numerador / denominador);
+    }
 
 }

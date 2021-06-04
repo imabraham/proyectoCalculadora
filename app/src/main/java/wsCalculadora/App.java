@@ -20,7 +20,5 @@ public class App {
         System.out.println("Sen(0)="+c.seno(0));
         System.out.println("Cos(0)="+c.coseno(0));
         System.out.println("Tan(0)="+c.tangente(0));
-
     }
-
 }

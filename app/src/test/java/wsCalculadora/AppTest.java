@@ -40,30 +40,45 @@ public class AppTest {
     }
     @Test public void testResta(){
         Calculadora c = new Calculadora();
-        assertTrue((Double) c.resta(2, -3)==5);
+
+        assertTrue((Double) c.resta(-3, 2)==-5);
         assertTrue((Double) c.resta(17, 10)==7);
-        
     }
+
     @Test public void testExponencial(){
         Calculadora c = new Calculadora();
+
         assertTrue((Double) c.exponencial(2, 2)== 4);
         assertTrue((Double) c.exponencial(-10, 3)== -1000);
-        assertTrue((Double) c.exponencial(12, -5)== 0.0000048188);
+        assertTrue((Double) c.exponencial(2, -1)== 0.5);
     }
 
     @Test public void testDivision() {
         Calculadora c = new Calculadora();
 
         assertTrue(c.division(1,1)==1);
-	    assertTrue((Double)c.division(1,2)==(Double)0.5);
+	    assertTrue(c.division(1,2)==(Double)0.5);
         assertTrue(c.division(0,15)==0);
     }
 
     @Test public void testlog10() {
         Calculadora c = new Calculadora();
 
-        assertTrue(c.log(5) == 0.6989);
+        assertTrue(c.log(100) == 2);
         assertTrue(c.log(1) == 0);
-        
+    }
+
+    @Test public void testLn() {
+        Calculadora c = new Calculadora();
+
+        assertTrue(c.ln(1) == 0);
+        assertTrue(c.ln(Math.exp(1)) == 1);
+    }
+
+    @Test public void testRadical() {
+        Calculadora c = new Calculadora();
+
+        assertTrue(c.radical(4, 1, 2) == 2);
+        assertTrue(c.radical(0, 1, 1) == 0);
     }
 }
