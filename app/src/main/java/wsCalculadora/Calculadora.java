@@ -30,4 +30,8 @@ public class Calculadora {
         return Math.pow(x,y);
     }
 
+    public double division(double x, double y) {
+        return x/y;
+    }
+
 }
