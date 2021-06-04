@@ -25,4 +25,9 @@ public class Calculadora {
 
         return a-b;
     }
+    
+    public double exponencial(double x, double y) {
+        return Math.pow(x,y);
+    }
+
 }

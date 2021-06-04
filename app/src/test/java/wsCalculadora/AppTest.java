@@ -44,4 +44,10 @@ public class AppTest {
         assertTrue((Double) c.resta(17, 10)==7);
         
     }
+    @Test public void testExponencial(){
+        Calculadora c = new Calculadora();
+        assertTrue((Double) c.exponencial(2, 2)== 4);
+        assertTrue((Double) c.exponencial(-10, 3)== -1000);
+        assertTrue((Double) c.exponencial(12, -5)== 0.0000048188);
+    }
 }
